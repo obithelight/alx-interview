@@ -1,4 +1,10 @@
+#!/usr/bin/python3
+'''A Python3 Module'''
+
+
 def pascal_triangle(n):
+    '''returns a list of lists of integers'''
+
     triangle = []
     for i in range(n):
         row = []
