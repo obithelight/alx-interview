@@ -55,4 +55,5 @@ def solve_n_queens(r):
             board[r] = [0, 0]
 
 
-solve_n_queens(0)
+if __name__ == '__main__':
+    solve_n_queens(0)
