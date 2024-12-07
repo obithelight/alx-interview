@@ -1,10 +1,10 @@
 #!/usr/bin/node
-//Script to print the star wars API
+// Script to print the star wars API
 
 const request = require('request');
 const MOVIE_ID = process.argv[2];
 
-//Request URL
+// Request URL
 const URL_BASE = 'https://swapi-api.hbtn.io/api/films';
 
 function doRequest (url) {
@@ -19,7 +19,7 @@ function doRequest (url) {
   });
 }
 
-//Usage:
+// Usage:
 
 async function main (filmID) {
   const res = await doRequest(`${URL_BASE}/${filmID}`);
